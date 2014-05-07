@@ -1,7 +1,7 @@
 require './server' 
 # Remember environment variables from week 1?
 ENV["RACK_ENV"] = 'test' # because we need to know what database to work with
-
+#here we specify the environemt so that the tests are using the right database
 # this needs to be after ENV["RACK_ENV"] = 'test' 
 # because the server needs to know
 # what environment it's running it: test or development. 
