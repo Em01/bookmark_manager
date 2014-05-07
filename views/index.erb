@@ -1,1 +1,8 @@
 <h1>Welcome, this is a bookmark manager</h1>
+Current links:
+<ul>
+  <% @links.each do |link %>
+    <li><a href="<%= link.url %>"><%= link.title %></ul>a></ul>li>
+  <% end %>
+</ul>
+

@@ -1,5 +1,8 @@
 require './server' 
 require 'database_cleaner'
+require 'capybara/rspec' 
+
+Capybara.app = Sinatra::Application.new                                                                                                                                 
 # Remember environment variables from week 1?
 ENV["RACK_ENV"] = 'test' # because we need to know what database to work with
 #here we specify the environemt so that the tests are using the right database
